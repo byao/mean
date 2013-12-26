@@ -2,7 +2,7 @@
     'use strict';
 
     // Articles Controller Spec
-    describe('MEAN controllers', function() {
+    describe('OSC controllers', function() {
 
         describe('ArticlesController', function() {
 
@@ -20,7 +20,7 @@
             });
 
             // Load the controllers module
-            beforeEach(module('mean'));
+            beforeEach(module('osc'));
 
             // Initialize the controller and a mock scope
             var ArticlesController,

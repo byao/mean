@@ -1,8 +1,8 @@
 {
-    "db": "mongodb://localhost/mean-travis",
+    "db": "mongodb://localhost/osc-travis",
     "port": 3001,
     "app": {
-        "name": "MEAN - A Modern Stack - Test on travis"
+        "name": "onlinesmogcheck - test on travis"
     },
     "facebook": {
         "clientID": "APP_ID",

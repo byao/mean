@@ -1,12 +1,12 @@
 (function() {
     'use strict';
 
-    describe('MEAN controllers', function() {
+    describe('OSC controllers', function() {
 
         describe('HeaderController', function() {
 
             // Load the controllers module
-            beforeEach(module('mean'));
+            beforeEach(module('osc'));
 
             var scope,
                 HeaderController;
