@@ -5,4 +5,6 @@ node_modules/
 public/lib
 test/coverage/
 .idea
+public/prod
+logs/
 
