@@ -43,6 +43,7 @@
     "devDependencies": {
         "supertest": "latest",
         "should": "latest",
+        "load-grunt-tasks": "latest",
         "grunt-contrib-watch": "latest",
         "grunt-contrib-jshint": "latest",
         "grunt-contrib-cssmin": "latest",
@@ -50,8 +51,7 @@
         "grunt-nodemon": "latest",
         "grunt-concurrent": "latest",
         "grunt-mocha-test": "latest",
-        "grunt-preprocess": "latest",
-        "grunt-forever": "latest",
+        "grunt-shell": "latest",
         "grunt-karma": "~0.6.2",
         "karma-script-launcher": "~0.1.0",
         "karma-chrome-launcher": "~0.1.0",

@@ -1,5 +1,5 @@
 //Global service for global variables
-angular.module('osc.system').factory("Global", [
+angular.module('osc.system').factory('Global', [
     function() {
         var _this = this;
         _this._data = {

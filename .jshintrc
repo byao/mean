@@ -18,15 +18,12 @@
     "strict":       false,      // Require `use strict` pragma in every file.
     "trailing":     true,       // Prohibit trailing whitespaces.
     "smarttabs":    false,      // Suppresses warnings about mixed tabs and spaces
-    
+
     "indent":       4,          // Specify indentation spacing
     "maxlen":       120,        // Max line lenght
     "devel":        false,      // Allow development statements e.g. `console.log();`.
     "noempty":      true,       // Prohibit use of empty blocks.
 
-    "globals": {                // Globals variables.
-        "angular":  true
-    },
     "predef": [                 // Extra globals.
         "define",
         "require",
@@ -37,6 +34,9 @@
         "beforeEach",
         "after",
         "afterEach",
-        "it"
+        "it",
+        "expect",
+        "inject",
+        "angular"
     ]
 }

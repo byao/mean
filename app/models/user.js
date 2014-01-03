@@ -104,7 +104,7 @@ UserSchema.methods = {
      * @api public
      */
     makeSalt: function() {
-       return crypto.randomBytes(16).toString('base64'); 
+        return crypto.randomBytes(16).toString('base64');
     },
 
     /**
@@ -116,8 +116,8 @@ UserSchema.methods = {
      */
     encryptPassword: function(password) {
         if (!password || !this.salt) return '';
-        salt = new Buffer(this.salt, 'base64');
-        return crypto.pbkdf2Sync(password, salt, 10000, 64).toString('base64');
+        this.salt = new Buffer(this.salt, 'base64');
+        return crypto.pbkdf2Sync(password, this.salt, 10000, 64).toString('base64');
     }
 };
 

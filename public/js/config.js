@@ -26,6 +26,6 @@ angular.module('osc').config(['$routeProvider',
 //Setting HTML5 Location Mode
 angular.module('osc').config(['$locationProvider',
     function($locationProvider) {
-        $locationProvider.hashPrefix("!");
+        $locationProvider.hashPrefix('!');
     }
 ]);
