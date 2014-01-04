@@ -45,7 +45,7 @@ exports.update = function(req, res) {
 
     article = _.extend(article, req.body);
 
-    article.save(function(err) {
+    article.save(function() {
         res.jsonp(article);
     });
 };

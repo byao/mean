@@ -13,8 +13,8 @@ var express = require('express'),
 
 //Load configurations
 //if test env, load example file
-var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
-    config = require('./config/config'),
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+var config = require('./config/config'),
     auth = require('./config/middlewares/authorization'),
     mongoose = require('mongoose');
 
@@ -58,4 +58,4 @@ console.log('Express app started on port ' + port);
 logger.init(app, passport, mongoose);
 
 //expose app
-exports = module.exports = app;
+module.exports = app;

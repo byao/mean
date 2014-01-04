@@ -2,10 +2,11 @@
  * Module dependencies.
  */
 var should = require('should'),
-    app = require('../../../server'),
     mongoose = require('mongoose'),
     User = mongoose.model('User'),
     Article = mongoose.model('Article');
+
+require('../../../server');
 
 //Globals
 var user;
@@ -22,7 +23,7 @@ describe('<Unit Test>', function() {
                 password: 'password'
             });
 
-            user.save(function(err) {
+            user.save(function() {
                 article = new Article({
                     title: 'Article Title',
                     content: 'Article Content',

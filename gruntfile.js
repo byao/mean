@@ -36,7 +36,15 @@ module.exports = function(grunt) {
         },
         jshint: {
             all: {
-                src: ['gruntfile.js', 'public/js/**/*.js', 'test/mocha/**/*.js', 'test/karma/**/*.js', 'app/**/*.js'],
+                src: [
+                    'gruntfile.js',
+                    'server.js',
+                    'config/**/*.js',
+                    'public/js/**/*.js',
+                    'test/mocha/**/*.js',
+                    'test/karma/**/*.js',
+                    'app/**/*.js'
+                ],
                 options: {
                     jshintrc: true
                 }
@@ -134,9 +142,6 @@ module.exports = function(grunt) {
             }
         }
     });
-
-    // Making grunt default to force in order not to break the project.
-    grunt.option('force', true);
 
     // Development
     grunt.registerTask('default', ['env:dev', 'jshint', 'concurrent']);

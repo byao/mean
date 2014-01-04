@@ -2,12 +2,13 @@
  * Module dependencies.
  */
 var should = require('should'),
-    app = require('../../../server'),
     mongoose = require('mongoose'),
     User = mongoose.model('User');
 
+require('../../../server');
+
 //Globals
-var user;
+var user, user2;
 
 //The tests
 describe('<Unit Test>', function() {
