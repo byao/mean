@@ -70,6 +70,11 @@ module.exports = function(app, passport, auth) {
     //Finish with setting up the articleId param
     app.param('articleId', articles.article);
 
+    // Admin Routes
+    var admin = require('../app/controllers/admin');
+    //app.all('/admin/*', auth.requiresLogin, auth.user.requiresAdmin);
+    app.get('/admin', auth.requiresLogin, auth.user.requiresAdmin, admin.render);
+
     //Home route
     var index = require('../app/controllers/index');
     app.get('/', index.render);

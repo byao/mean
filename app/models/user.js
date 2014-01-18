@@ -12,7 +12,10 @@ var mongoose = require('mongoose'),
  */
 var UserSchema = new Schema({
     name: String,
-    email: String,
+    email: {
+        type: String,
+        unique: true
+    },
     username: {
         type: String,
         unique: true
@@ -20,6 +23,10 @@ var UserSchema = new Schema({
     hashed_password: String,
     provider: String,
     salt: String,
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
     facebook: {},
     twitter: {},
     github: {},

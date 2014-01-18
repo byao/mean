@@ -17,6 +17,14 @@ exports.user = {
             return res.send(401, 'User is not authorized');
         }
         next();
+    },
+
+    requiresAdmin: function(req, res, next) {
+        if (req.user && req.user.isAdmin) {
+            next();
+        } else {
+            return res.send(401, 'User is not authorized');
+        }
     }
 };
 

@@ -14,6 +14,9 @@ angular.module('osc').config(['$routeProvider',
         when('/articles/:articleId', {
             templateUrl: 'views/articles/view.html'
         }).
+        when('/admin', {
+            templateUrl: 'views/admin/index.html'
+        }).
         when('/', {
             templateUrl: 'views/index.html'
         }).
